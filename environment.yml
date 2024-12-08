@@ -1,0 +1,29 @@
+name: mfh
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.5.1=py3.10_cuda11.8_cudnn9.1.0_0
+  - pytorch-cuda=11.8
+  - torchvision
+  - pip
+  - pip:
+      - accelerate
+      - diffusers
+      - einops
+      - exifread
+      - huggingface_hub
+      - git+https://github.com/facebookresearch/detectron2.git
+      - git+https://github.com/facebookresearch/pytorch3d.git
+      - git+https://github.com/facebookresearch/xformers.git
+      - git+https://github.com/shubham-goel/4D-Humans.git
+      - opencv-python
+      - pytorch-lightning
+      - pyrender
+      - scikit-image
+      - smplx==0.1.28
+      - timm
+      - transformers
+      - yacs
